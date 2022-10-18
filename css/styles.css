@@ -1,7 +1,57 @@
 :root {
     
 }
+
 body {
-    background-color: white;
-    
+    background-color: #F5F5F5;
+    color: #212121;
+    font-family: Roboto, sans-serif; 
+}
+
+/* цвет основого текста #212121 */
+/* вторичный цвет текста #757575*/
+/* вспомагат черный цвет #000000 */
+/* белый цвет #FFFFFF */
+/* акцент синий цвет #2196F3 */
+/* футер почта,тел rgba(255, 255, 255, 0.6)*/
+
+/* осн цвет фона #F5F5F5 */
+/* вторичный цвет фона #F5F4FA */
+/* герой, футер цвет фона #2F303A */
+
+ul {
+    list-style: none;
+}
+
+.site-nav {}
+.site-nav-studio:hover {
+    color: blue;
+}
+
+.contacts {
+    color: black;
+}
+
+.contacts-mail,
+.contacts-tel {
+    color: inherit;
+}
+
+.contacts-mail:hover, 
+.contacts-mail:focus {
+    color: blue;
+}
+
+/* секция заголовок и кнопка */
+
+.title {}
+
+.btn {
+    color: black;
+    background-color: #F5F4FA;
+}
+
+.btn:hover,
+.btn:focus {
+    color: blue;
 }
