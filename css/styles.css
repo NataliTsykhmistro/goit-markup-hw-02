@@ -185,12 +185,14 @@ ul {
 
 .address {
     color: var(--title-text-color);
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
 }
 
 .footer-contacts {
     color:var(--footer-mail-text-color);
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
 }   
