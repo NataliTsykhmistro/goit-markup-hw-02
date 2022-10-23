@@ -3,8 +3,9 @@
     --secondary-text-color: #757575;
     --title-text-color: #FFFFFF;
     --accent-color: #2196F3;
+    --logo-accent-color: #000000;
     --footer-mail-text-color: rgba(255, 255, 255, 0.6);
-    --primary-bg-color: #F5F5F5;
+    --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
     --hero-footer-bg-color: #2F303A;
 }   
@@ -23,6 +24,7 @@
 body {
     color: var(--primary-text-color);
     background-color: var(--primary-bg-color);
+    font-size: 14px;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
@@ -38,7 +40,6 @@ ul {
 }
 
 .logo {
-    --logo-accent-color: #000000;
     color: var(--logo-accent-color);
 }
 
@@ -57,6 +58,7 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    text-decoration: none;
 }
 
 /* Site nav */
@@ -64,9 +66,9 @@ ul {
 .site-nav .link {
     color: var(--primary-text-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .site-nav .link:hover, 
@@ -80,12 +82,12 @@ ul {
 
 /* контакты шапка и футер */
 
-.contacts {
+.social-links a {
     color: var(--secondary-text-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .contacts-mail,
@@ -123,8 +125,12 @@ ul {
 
 .button {
     color: var(--primary-text-color);
-    background-color: var(--secondary-bg-color);
+    background-color: var(--primary-bg-color);
     font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
 }
 
 .button.primary {
@@ -160,21 +166,44 @@ ul {
 /* секция: команда, особенности; в портфолио:
  сайты*/
 
-.team .title, 
-.features .title, 
+.features .title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    line-height: 1.14;
+}
+
+.features .item {
+    color: var(--secondary-text-color);
+    line-height: 1.71;
+}
+
+.team .title {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+ .team .item {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+ }
+
 .sites .title {
     color: var(--primary-text-color);
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
 }
-.team .item, 
-.features .item, 
+  
 .sites .item {
     color: var(--secondary-text-color);
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 16px;
+    line-height: 1.88;
 }
 
 /* футер */
@@ -186,13 +215,12 @@ ul {
 .address {
     color: var(--title-text-color);
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
+    text-decoration: none;
 }
 
 .footer-contacts {
     color:var(--footer-mail-text-color);
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
 }   
